@@ -1,2 +1,2 @@
 # jwst_offset
-Calculatin for offset target acquisition with JWST/MIRI.
+Calculate offset for target acquisition with JWST/MIRI.
