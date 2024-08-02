@@ -1,4 +1,7 @@
 """
+THIS MODULE IS NOT COMPLETE AND IS NOT INTENDED TO BE USED YET.
+===============================================================
+
 Calculate x and y offset for target acquisition with JWST.
 
 This module provides functions to calculate the x and y offset for target
