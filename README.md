@@ -12,7 +12,8 @@ Note: this software is in development and not yet completed
 - pySIAF
 - coronographic_offset_ta
 
-This last module has been developed by Jonathan Aguilar and is available at
+This last module has been developed by Jonathan Aguilar and is available at:
+
 https://github.com/STScI-MIRI/coronagraphy_offset_ta
 
 ## Description ##
@@ -46,24 +47,24 @@ This scripts are designed to allow experimenting with different obserning
 windows (must be within the visibility window), to then use as constraints
 for the observations. The following parameters are required:
 
-- JWST_TIME1: beginning of JWST observing window
-- JWST_TIME2: beginning of JWST observing window
-- V3PA_TIME1: chosen V3PA at the beginning of JWST observing window
-- V3PA_TIME2: chosen V3PA at the end of JWST observing window
-- CORON_ID_A: # ID for first coronagraphic observation
-- CORON_ID_B: # ID for second coronagraphic observation
+- `JWST_TIME1`: beginning of JWST observing window
+- `JWST_TIME2`: beginning of JWST observing window
+- `V3PA_TIME1`: chosen V3PA at the beginning of JWST observing window
+- `V3PA_TIME2`: chosen V3PA at the end of JWST observing window
+- `CORON_ID_A`: # ID for first coronagraphic observation
+- `CORON_ID_B`: # ID for second coronagraphic observation
 
 For the R Aqr program we use `CORON_ID_A = '1140'` and `CORON_ID_B = '1550'`.
 
 The V3PA angles need to be set within the available angles for a specified
-oberving date. The allowed range can be obtained from APT: Visit Planner ->
-Reports -> Visit -> Total Roll Analysis for Visit. We need to check with
+oberving date. The allowed range can be obtained from APT: `Visit Planner` ->
+`Reports` -> `Visit` -> `Total Roll Analysis for Visit`. We need to check with
 technical support that this is really as it works.
 
 ### Science and acquisition target astronomy ###
 
-For both science target we need to provide a SkyCoord object with RA, DEC,
-PMRA, PMDEC, PARALLAX, date when the coordinates had been derived, and
+For both science target we need to provide a `SkyCoord` object with `RA`, `DEC`,
+`PMRA`, `PMDEC`, `PARALLAX`, date when the coordinates had been derived, and
 a coordinate frame of reference (e.g. 'icrs') with reference epoch.
 
 For R Aqr we rely on our VLBI astrometry. For the PSF reference and the 
