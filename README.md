@@ -1,9 +1,7 @@
 # Offsets for MIRI coronagraphic observations of R Aqr
-Author: Massimo Marengo (2024)
-
-Last update: 09/05/2024
-
-Note: this software is in development and not yet completed
+- Author: Massimo Marengo (2024)
+- Last update: 09/05/2024
+- Note: this software is in development and not yet completed
 
 ## Requirements ##
 - numpy
@@ -19,9 +17,10 @@ https://github.com/STScI-MIRI/coronagraphy_offset_ta
 ## Description ##
 
 This package provides a set of Jupyter notebooks to calculate the dx, dy
-offsets for source acquisition from an offset source. The current notebook 
-provides the calculation for R Aqr in two of the MIRI 4QPM coronagraphs.
-A similar notebook for the PSF reference star is being prepared.
+offsets for source acquisition from an offset source. The notebook 
+`r_aqr_miri_offset_ta.ipynb` provides the calculation for R Aqr in two of
+the MIRI 4QPM coronagraphs. A similar notebook for the PSF reference star
+is being developed.
 
 The calculations are done in the following steps:
 
@@ -40,6 +39,10 @@ stars with respect to the main PSF features (e.g. spikes) of the nearby bright
 stars (R Aqr and the PSF star respectively). This will provide appropriate
 constraints for the V3PA angle (and the observing time window) that will 
 allow a safe target acquisition.
+
+The older notebook `r_miri_offsets.ipynb` is not currently used. It was
+developed to check the VLBI astrometry by propagating the astrometry from 
+2020 VLBI observations to the latest 2024 observations.
 
 ### Observing Parameters ###
 
@@ -92,7 +95,7 @@ used to update the observation planning in APT:
 ## Status ##
 
 The calculation described above are available for R Aqr, and can be accessed
-in the Jupyter notebook `r_aqr_miri_offset_ta.ipnb`.
+in the Jupyter notebook `r_aqr_miri_offset_ta.ipynb`.
 
 We need to create a new notebook to check the position of the acquisition
 stars with respect to the R Aqr (and, separately, the PSF star) PSF, using
