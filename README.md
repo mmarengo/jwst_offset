@@ -1,6 +1,8 @@
 # Offsets for MIRI coronagraphic observations of R Aqr
 Author: Massimo Marengo (2024)
+
 Last update: 09/05/2024
+
 Note: this software is in development and not yet completed
 
 ## Requirements ##
